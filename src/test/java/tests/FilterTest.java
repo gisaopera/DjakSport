@@ -40,13 +40,13 @@ public class FilterTest extends BaseTest {
             String actualbojaCrvenaTag = filterPage.bojaCrvenaTag();
 
             assert actualNovaKolekcijaTag.contains(NovaKolekcijaTag) :
-                    "Error! No error message for empty Password field:" +
+                    "Error! Ne postoji tag za novu kolekciju:" +
                             NovaKolekcijaTag + " . Actual: " + actualNovaKolekcijaTag;
             assert actualvelicina37Tag.contains(velicina37Tag) :
-                    "Error! No error message for empty Password field:" +
+                    "Error! Ne postoji tag za velicinu 37:" +
                             velicina37Tag + " . Actual: " + actualvelicina37Tag;
             assert actualbojaCrvenaTag.contains(bojaCrvenaTag) :
-                    "Error! No error message for empty Password field:" +
+                    "Error! Ne postoji tag za crvenu boju:" +
                             bojaCrvenaTag + " . Actual: " + actualbojaCrvenaTag;
 
 

@@ -6,7 +6,7 @@ import pages.HomePage;
 import pages.ItemPage;
 import pages.LoyaltyCardPage;
 
-// ovaj test proverava da li je tekst u Loyalty tabu u redu - iznos kupovine mora biti 40.000 dinara.
+// ovaj test proverava da li je tekst u Loyalty tabu ocekivan.
 
 public class LoyaltyCardTest {
     @Test
@@ -19,7 +19,7 @@ public class LoyaltyCardTest {
             homePage.clickLoyaltyTab();
 
             LoyaltyCardPage loyaltyCardPage = new LoyaltyCardPage(driver);
-            String LoyaltyText = "SAKUPLJAJTE I TROŠITE POENE BILO KADA U NAREDNIH GODINU DANA - 1 POEN = 1 DINAR";
+            String LoyaltyText = "Ukoliko ste u poslednjih 365 dana imali kupovinu u ukupnom iznosu od 40.000 dinara.";
             String actualLoyaltyText = loyaltyCardPage.getLoyaltyText();
             assert actualLoyaltyText.contains(LoyaltyText) : "Error. Wrong text found. Expected: " + LoyaltyText + ". Actual: " + actualLoyaltyText;
 
